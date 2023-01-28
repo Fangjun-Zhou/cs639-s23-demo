@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25.1)
+cmake_minimum_required(VERSION 3.22.1)
 
 project(CS639S23)
 
@@ -9,6 +9,9 @@ if (APPLE)
     set(CMAKE_CXX_COMPILER /usr/local/opt/llvm/bin/clang++)
     # Link llvm libraries.
     link_directories(/usr/local/opt/llvm/lib)
+elseif(UNIX AND NOT APPLE)
+    # Use g++ on Linux.
+    set(CMAKE_CXX_COMPILER g++)
 else()
     # TODO: Add Windows and Linux support.
     message("Platform not support.")

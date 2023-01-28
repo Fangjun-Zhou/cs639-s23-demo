@@ -13,3 +13,9 @@ Current CMake config will generate 2 versions for all the build targets: one wit
 3. Generate project with `cmake -S . -B build/`, `build/` directory is ignored by `.gitignore`.
 4. Build with `make -C build/`
 5. All the binaries build targets are in `build/bin` directory.
+
+## Linux (Varified on UW-Madison CS Lab)
+
+1. Generate project with `cmake -S . -B build/`, `build/` directory is ignored by `.gitignore`.
+2. Build with `make -C build/`
+3. All the binaries build targets are in `build/bin` directory.
