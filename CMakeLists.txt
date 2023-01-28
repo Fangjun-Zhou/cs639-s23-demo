@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.25.1)
 project(CS639S23)
 
 # ------------------- Environment Settings ------------------- #
+
 if (APPLE)
     # Need llvm installed.
     set(CMAKE_CXX_COMPILER /usr/local/opt/llvm/bin/clang++)
